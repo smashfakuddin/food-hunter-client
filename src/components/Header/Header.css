@@ -1,0 +1,29 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 15px 0px 15px;
+}
+.nav-item{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.nav-item li{
+    margin-left: 50px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.main-button{
+    margin-left: 15px;
+    border: none;
+    padding: 10px;
+    width: 150px;
+    background-color: rgb(26, 71, 26);
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,12 @@
+.product-cart{
+    border: 2px solid black;
+    width: 250px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.test{
+   display: flex; 
+   justify-content: flex-start;
+}
