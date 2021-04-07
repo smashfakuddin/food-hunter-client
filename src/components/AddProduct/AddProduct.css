@@ -1,0 +1,7 @@
+.add-product{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 475px;
+    margin-top: 150px;
+}

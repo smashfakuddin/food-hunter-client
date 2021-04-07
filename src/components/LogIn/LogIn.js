@@ -1,4 +1,5 @@
 import React, { useContext, useState } from 'react';
+import './LogIn.css';
 import firebase from "firebase/app";
 import "firebase/auth";
 import firebaseConfig from './firebaseConfig';
@@ -40,7 +41,10 @@ const LogIn = () => {
 
     return (
         <div>
-            <button className='signIn-button' onClick={handleSignIn} >Continue With google </button>
+            {
+             loggedInUser.email? <h2 className='message'>Welcome {loggedInUser.name} </h2> : <button className='signIn-button' onClick={handleSignIn} >Continue With google </button>
+            }
+           
         </div>
     );
 };

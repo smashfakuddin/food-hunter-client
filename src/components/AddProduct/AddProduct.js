@@ -1,4 +1,5 @@
 import axios from 'axios';
+import './AddProduct.css';
 import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
 
@@ -38,24 +39,13 @@ const AddProduct = () => {
             });
     }
 
-
-    const handleAddProduct = () => {
-
-
-        // fetch('http://localhost:5000/addProduct', {
-        //     method: 'POST',
-        //     headers: {
-        //         'Content-Type': 'application/json'
-        //     },
-        //     // body: JSON.stringify(product)
-        // })
-    }
-
     return (
         <div>
-            <form onSubmit={handleSubmit(onSubmit)}>
+            <form onSubmit={handleSubmit(onSubmit)} className='add-product'>
                 <input name="name" defaultValue="Product Name" {...register("name")} />
+
                 <input name="price" defaultValue="0" {...register("price")} />
+
                 <input name="exampleRequired" type='file' onChange={handleImageUpload} />
 
                 <input type="submit" />
