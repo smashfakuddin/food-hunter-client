@@ -9,7 +9,7 @@ const Home = () => {
             .then(data => setProduct(data))
     }, [])
     return (
-        <div className="row">
+        <div className="row ms-3">
             {
                 products.map(pd => <Product pd={pd}></Product>)
             }

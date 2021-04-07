@@ -10,7 +10,7 @@ const Product = (props) => {
         history.push(`/product/${_id}`);
     }
     return (
-        <div className="product-cart col-3">
+        <div className="product-cart ml-5 mb-3 col-3 ">
             <img width='200' src={img} alt="" />
             <h3>{name}</h3>
             <div className='test'>
