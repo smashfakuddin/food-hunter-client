@@ -13,7 +13,7 @@ const AddProduct = () => {
             img: imageURL
         }
         console.log(productData, data);
-        fetch('http://localhost:5000/addProduct', {
+        fetch('https://gentle-gorge-99522.herokuapp.com/addProduct', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
